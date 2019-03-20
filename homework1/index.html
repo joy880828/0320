@@ -15,8 +15,9 @@
 		function divide(n1,n2){
 			window.alert(n1/n2) ;
 		}
-		function a(){
-			window.alert(eval(n2.value));
+		function clear1(){
+			document.getElementById('n1').value = "";
+			document.getElementById('n2').value = "";
 		}
 	</script>
 	</head>
@@ -28,8 +29,8 @@
 <button id="minus" onclick="minus(eval(n1.value),eval(n2.value))">-</button>
 <button id="gg" onclick="gg(eval(n1.value),eval(n2.value))">*</button>
 <button id="divide" onclick="divide(eval(n1.value),eval(n2.value))">/</button>
-<input type="number" id = "n2">
-
+<button id = "clear"  onclick="clear1()" >清除數字</button>
+<input type="text" id = "n2">
 
 </body>
 </html>

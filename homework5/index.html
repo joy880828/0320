@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function sc(n){
+			n = eval(n)
+			if(n>=60){
+				document.getElementById("show").innerHTML = "非常好";
+			}else{
+				document.getElementById("show").innerHTML = "不及格";
+			}
+			
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			ctx.clearRect(0,0,50,300);
+			ctx.fillStyle = 'red';
+			var x = eval(score.value);
+			ctx.fillRect(0,300,50,-(3*x));
+
+		} 
+
+
+	</script>
+</head>
+<body>
+	<input id = "score" >
+	<button onclick="sc(score.value)">判斷成績</button>	
+	<p id = "show"></p>
+	<br>
+	<canvas id = "myCanvas"width="50px" height="300px">
+		
+	</canvas>
+
+	
+</body>
+</html>

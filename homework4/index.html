@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function move(){
+			/*var dd document.getElementById("d01");
+			dd.style.left=500;*/
+			var c1 = document.getElementById("myCanvas");
+			var ctx1 = c.getContext("2d");
+			var i = 0;
+			var goright = true;
+				setInterval(function(){
+				ctx.fillStyle = 'red';
+				ctx.fillRect(0,0,800,600);
+				if(goright){
+					i++;
+					if(i>650){
+						goright = false;
+					}
+				}else{					
+					i--;
+					if(i<50){
+						goright = true;
+					}
+				}
+				ctx.clearRect(50+i,50,100,100); }, 10);
+		}
+	</script>
+</head>
+<body>
+
+		<canvas id="myCanvas"   width="800" height="600" style="border:10px solid #d3d3d3;"></canvas>
+	
+
+<script>
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.fillStyle = 'red';
+	ctx.fillRect(0,0,800,600);
+	ctx.clearRect(50,50,100,100);
+</script>
+<button onclick="move()">開始移動</button>
+
+</body>
+</html>

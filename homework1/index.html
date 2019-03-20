@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function plus(n1,n2){
+			window.alert(n1+n2) ;
+		}
+		function minus(n1,n2){
+			window.alert(n1-n2) ;
+		}
+		function gg(n1,n2){
+			window.alert(n1*n2) ;
+		}
+		function divide(n1,n2){
+			window.alert(n1/n2) ;
+		}
+		function a(){
+			window.alert(eval(n2.value));
+		}
+	</script>
+	</head>
+<body>
+
+
+<input type="text" id = "n1">
+<button id="plus" onclick="plus(eval(n1.value),eval(n2.value))">+</button>
+<button id="minus" onclick="minus(eval(n1.value),eval(n2.value))">-</button>
+<button id="gg" onclick="gg(eval(n1.value),eval(n2.value))">*</button>
+<button id="divide" onclick="divide(eval(n1.value),eval(n2.value))">/</button>
+<input type="number" id = "n2">
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function sc(n){
+			n = eval(n)
+			if(n>=60){
+				document.getElementById("show").innerHTML = "非常好";
+			}else{
+				document.getElementById("show").innerHTML = "不及格";
+			}
+		} 
+	</script>
+</head>
+<body>
+	<input id = "score" >
+	<button onclick="sc(score.value)">判斷成績</button>	
+	<p id = "show"></p>
+</body>
+</html>
